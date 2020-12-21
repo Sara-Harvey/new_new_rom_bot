@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>New Rom Bot</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+
+	<style>
+	    @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+	    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+		h1 { font-family: "Fredoka One", sans-serif; }
+		h3, p { font-family: "Raleway", sans-serif; }
+	</style>
+
+</head>
+
+
+<body>
+	<div class="main">
+
+			<h1>New New Rom Bot</h1>
+
+			<div class="tagline">
+				<h3>New lyrics for New Romantics — a mashup generator</h3>
+			</div><BR><BR>
+			
+			<div class="button-box">
+				<a href="/" class="button" onclick="myFunction()">Again!</a>
+
+			</div><BR><BR><BR>
+
+			<div class="output">
+				<h3><%= @webpage_result %></h3><BR>
+				
+				<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="<%= @webpage_result %>" data-url="http://bit.ly/NewNewRomBot" data-via="NewNewRomBot1" data-hashtags="newromantics" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				<a class="twitter-follow-button"
+				  href="https://twitter.com/NewNewRomBot1"
+				  data-size="large">Follow @NewNewRomBot1</a>
+			</div><BR>
+
+			<p>@ 2020 Sara Harvey tidyelement.com</p>
+
+	  <script>
+		d3.selectAll("h1").style("color", function() {
+		  return "hsl(" + Math.random() * 360 + ",100%,50%)";
+		});
+      </script>
+		
+	</div>
+</body>
+</html>
+
